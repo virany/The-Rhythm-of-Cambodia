@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    .croissant-one-regular {
+        font-family: "Croissant One", serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+}
+
+
+
+/* Header Section */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 249, 212), rgb(255, 249, 212)), url(images/new.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgb(216, 117, 50); /* Adjusted for consistency */
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.nav-links ul li {
+    background-color: rgba(211, 96, 47, 0.933);
+    display: inline-block;
+    padding: 4px 8px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 249, 212) !important;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding:4px 3px;
+}
+
+/* Logo and Title */
+.icon {
+    height: 59px;
+    margin-right: 2px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: "Croissant One";
+    color: rgb(255, 249, 212);
+    z-index: 1;
+    margin-left:-13px;
+}
+
+/* Hover Effects */
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(255, 249, 212);
+    display: block;
+    margin: auto;
+    transition: width 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+.woo{
+    width: 100%;
+    height:700px;
+    border-left: 50px;
+    object-fit: cover;
+    
+}
+
+h2{
+    font-size: 19px;
+    font-family: "Croissant One";
+    position:absolute;
+    left:125px;
+    top:38px;
+    color:rgb(255, 249, 212);
+    z-index: 1;
+    
+}
+
+.text-box{
+    width: 55%;
+    color:rgb(255, 249, 212);
+    position: absolute;
+    top: 55%;
+    left: 25.5%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(199, 95, 26, 0.701) ; /* Background color of the rectangle */
+    padding: 25px; /* Space inside the rectangle */
+    border-radius: 3px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    margin: 20px; /* Optional: space outside the rectangle */
+}
+
+.text-box h1 {
+    margin-bottom: 20px; /* Adjust this value to increase space below the h1 */
+    font-size: 2.5rem;
+    font-family: "Croissant One";
+}
+
+
+
+.text-box p {
+    font-size: 1rem; /* Adjust the size as needed */
+}
+
+
+.gallery{
+    background-color: rgb(255, 249, 212);
+    width:100%;
+    margin:auto;
+    padding-top:50px;
+    text-align: center;
+}
+
+.row{
+    margin-top:5%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.gal-col{
+    flex-basis: 31%;
+    background:rgba(199, 95, 26, 0.701) ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding:40px 12px;
+    box-sizing: border-box;
+}
+
+.abt-btn{
+    display:inline-block;
+    text-decoration: none;
+    color:beige;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+}
+.abt-btn:hover{
+    border: 1px solid orangered;
+    background: pink;
+    transition: 1s;
+}
+    */
+
+    .gallery{
+        background-color: #fff9d4;
+        width:100%;
+        margin:auto;
+        padding-top:50px;
+        text-align: center;
+    }
+
+    .image-row {
+        display: flex; /* Use flexbox to arrange items in a row */
+        justify-content: space-between; /* Space items evenly */
+        align-items: center; /* Align items vertically in the center */
+        padding: 10px; /* Optional padding around the row */
+    }
+    
+    .image-column {
+        display: flex;
+        flex-direction: column; /* Stack image and button vertically */
+        align-items: center; /* Center items horizontally */
+        width: 28%; /* Each column takes up 30% of the container */
+        text-align: center; /* Center text within each column */
+    }
+    
+    .dance-image {
+        width: 90%; /* Image takes full width of the column */
+        height: 200px; /* Set a fixed height for uniformity */
+        object-fit: cover; /* Crop images to fill the set dimensions */
+        margin-bottom: 20px; /* Space between image and button */
+        border: 8px solid rgba(211, 96, 47, 0.933); /* Add this line for a border */
+        border-radius: 8px;
+    }
+    
+    
+   .dance-button {
+        font-family: inherit;
+        padding: 12px 20px; /* Button padding */
+        background-color: rgba(211, 96, 47, 0.933); /* Button background color */
+        color: rgb(252, 244, 194); /*Button text color */
+        border: none; /*Remove default border */
+        border-radius: 5px; /* Optional rounded corners */
+        cursor: pointer; /* Cursor changes to pointer on hover */
+        transition: background-color 0.3s ease; /* Transition for hover effect */
+    } 
+    
+    .dance-button:hover {
+        background-color: #d1421e; /*Change background color on hover */
+    }  
+
+
+    .contact-section {
+        padding: 40px;
+        background-color: rgba(211, 96, 47, 0.933);
+        color: rgb(245, 238, 198);
+        text-align: center;
+    }
+    
+    .contact-section a {
+        color: rgb(245, 238, 198);
+        font-weight: bold;
+    }
+    
+    .contact-section a:hover {
+        text-decoration: underline;
+    }
+
+

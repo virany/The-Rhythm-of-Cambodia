@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    .croissant-one-regular {
+        font-family: "Croissant One", serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 249, 212), rgb(255, 249, 212)), url(images/new.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgb(216, 117, 50); /* Adjusted for consistency */
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.nav-links ul li {
+    background-color: rgba(211, 96, 47, 0.933);
+    display: inline-block;
+    padding: 4px 8px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 249, 212) !important;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding:4px 3px;
+}
+
+/* Logo and Title */
+.icon {
+    height: 59px;
+    margin-right:10px;
+   
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: "Croissant One";
+    color: rgb(255, 249, 212);
+    z-index: 1;
+    margin-left:-12px;
+}
+
+/* Hover Effects */
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(255, 249, 212);
+    display: block;
+    margin: auto;
+    transition: width 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+
+
+.woo{
+    width: 100%;
+    height:auto;
+    border-left: 50px;
+    object-fit: cover;
+    
+}
+
+h2{
+    font-size: 19px;
+    position:absolute;
+    left:125px;
+    top:38px;
+    color:rgb(245, 238, 198);
+    z-index: 1;
+    font-family: "Croissant One";
+}
+
+.text-box{
+    width: 38%;
+    color:rgb(245, 238, 198);
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1 {
+    margin-bottom: 20px; /* Adjust this value to increase space below the h1 */
+    font-size: 52px;
+    text-align: center;
+    line-height: 1.5; /* Adjust this value to increase or decrease space */
+    font-family: "Croissant One";
+    
+}
+
+.text-box { /*Box behing the text*/
+    background-color: rgba(199, 95, 26, 0.75) ; /* Background color of the rectangle */
+    padding: 50px; /* Space inside the rectangle */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    margin: 20px; /*space outside the rectangle */
+}
+
+
+   
+    
+    .dance-image {
+        width: 90%; /* Image takes full width of the column */
+        height: 200px; /* Set a fixed height for uniformity */
+        object-fit: cover; /* Crop images to fill the set dimensions */
+        margin-bottom: 20px; /* Space between image and button */
+        border: 8px solid rgba(211, 96, 47, 0.933); /* Add this line for a border */
+        border-radius: 8px;
+    }
+    
+    
+   .dance-button {
+        font-family: inherit;
+        padding: 12px 20px; /* Button padding */
+        background-color: rgba(211, 96, 47, 0.933); /* Button background color */
+        color: rgb(252, 244, 194); /*Button text color */
+        border: none; /*Remove default border */
+        border-radius: 5px; /* Optional rounded corners */
+        cursor: pointer; /* Cursor changes to pointer on hover */
+        transition: background-color 0.3s ease; /* Transition for hover effect */
+    } 
+    
+    .dance-button:hover {
+        background-color: #d1421e; /*Change background color on hover */
+    } 
+
+
+
+    .info-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px;
+        background-color: rgb(255, 249, 212);
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .text-content {
+        flex: 1;
+        margin-right: 0; /* Remove margin to allow full width */
+        padding: 0;
+    }
+    
+    .text-content h3 {
+        font-family: "Croissant One", serif;
+        font-size: 28px;
+        color: rgb(199, 95, 26);
+        margin-bottom: 15px;
+    }
+    
+    .text-content p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .separator {
+        width: 100%;
+        height: 20px;
+        background-color: rgb(199, 95, 26);
+        margin: 20px 0;
+        display: block;
+    }
+    
+    .video-content {
+        flex: 0 0 30%;
+        text-align: center;
+        margin-top: 50px;
+        margin-left:100px;
+    }
+    
+    .video-content video {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .video-content figcaption {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 50px;
+    }
+    
+    @media (max-width: 768px) {
+        .info-section {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .text-content {
+            margin-right: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top:1px;
+            
+        }
+        
+        .dance-image {
+            width: 30%; /* Adjust the width of each image */
+            height: auto;
+            margin-bottom:50px;
+            margin-top:100px;
+            border: 5px solid rgba(211, 96, 47, 0.933); /* Add a border to match your theme */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+        }
+
+      
+    }
+
+    .paragraph-image {
+        width: 30%; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 20x; /* Add space between the paragraph and the image */
+        border: 5px solid rgba(211, 96, 47, 0.933); /* Add a border matching your theme */
+        border-radius: 8px;
+        margin-left: 40%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    
+    .contact-section {
+        padding: 40px;
+        background-color: rgba(211, 96, 47, 0.933);
+        color: rgb(245, 238, 198);
+        text-align: center;
+    }
+    
+    .contact-section a {
+        color: rgb(245, 238, 198);
+        font-weight: bold;
+    }
+    
+    .contact-section a:hover {
+        text-decoration: underline;
+    }
